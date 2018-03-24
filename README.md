@@ -1,1 +1,1 @@
-# eclectus-interactive
+# Eclectus Interactive
