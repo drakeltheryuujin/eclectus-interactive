@@ -1,0 +1,75 @@
+section#about.about.scrollspy
+    .container
+        h2: span About us
+        //
+            h3 Meet the Team
+            .row
+                // About general photo
+                .col.s12.l6.padding-bottom
+                    .rectangle(style='background-image: url(./assets/images/team/whiteboard.jpg)')
+
+                // About carousel
+                .owl-carousel.owl-theme.col.s12.l6
+                    a.col.s12.modal-trigger(href='#greg')
+                        .rectangle(style='background-image: url(./assets/images/team/greg.jpg)')
+                            .content
+                                .name Greg Jason
+                    a.col.s12.modal-trigger(href='#annie')
+                        .rectangle(style='background-image: url(./assets/images/team/annie.jpg)')
+                            .content
+                                .name Annie Redhat
+                    a.col.s12.modal-trigger(href='#kate')
+                        .rectangle(style='background-image: url(./assets/images/team/kate.jpg)')
+                            .content
+                                .name Kate Willson
+                    a.col.s12.modal-trigger(href='#russell')
+                        .rectangle(style='background-image: url(./assets/images/team/russell.jpg)')
+                            .content
+                                .name Russell Morgan
+                    a.col.s12.modal-trigger(href='#jane')
+                        .rectangle(style='background-image: url(./assets/images/team/jane.jpg)')
+                            .content
+                                .name Jane Stitch
+                    a.col.s12.modal-trigger(href='#roo')
+                        .rectangle(style='background-image: url(./assets/images/team/roo.jpg)')
+                            .content
+                                .name Roo
+                    .col.s12
+                        .rectangle.grey.lighten-3
+                            .content.valign-wrapper.you
+                                .name You?
+                                    br
+                                    a(href='mailto:job@react?subject=Job%20Application') Apply now
+
+                include ../team-modals/_kellye
+
+                include ../team-modals/_buddy
+
+        h3 Our philosophy
+        .row.philosophy.big-icons-row.grey.lighten-4
+            .col.s12
+                ul.tabs
+                    li.tab.col.s6
+                        a(href='#philosophy-1')
+                            i.icon-basic-heart
+                            h5 Who We Are
+                    li.tab.col.s6
+                        a(href='#philosophy-2')
+                            i.icon-basic-gear
+                            h5 What We Do
+
+            .tab-contents
+                #philosophy-1.col.s12.l8.offset-l2
+                    h5 Who We Are
+                    p.flow-text.center.margin-top-more.
+                      Eclectus Interactive is a small technology consultancy based in Brooklyn, NY. We 
+                      specialize in digital arts and digital media solutionse. We work with a close network 
+                      of skilled artists, creatives, strategists, and technologists.
+                #philosophy-2.col.s12.l8.offset-l2
+                    h5 What We Do
+                    p.flow-text.center.margin-top-more.
+                      Our passion is to offer affordable technical services to non-profits, small businesses, and
+                      entreprenuers--especially ones working with tight budgets. We thrive on offering professional 
+                      clients technical solutions that will representat who they are and what they do. We passionately 
+                      believe that these services should be accessible and affordable for all. It doesn't make us the
+                      biggest bucks--but it sure beats working on boring, corporate projects!

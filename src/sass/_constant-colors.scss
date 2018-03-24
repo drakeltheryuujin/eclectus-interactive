@@ -1,0 +1,32 @@
+// Global colors
+$black: #313C3F;
+$white: #fff;
+$light-grey: #DDFD70;
+$light-green: #DDFD70;
+$light-orange: #F7C92E;
+$orange: #FD8E30;
+$emerald: #2AE792;
+$pink: #FC3F78;
+$ruby: #BB1B51;
+$royal: #2645DB;
+$violet: #2E347D;
+$grey: $emerald;;
+$background-color: $white;
+
+// Used in _nav.scss
+$nav-item-border-color: $emerald;
+
+// Used in _social.scss
+$facebook: #3b5998;
+$twitter: #4099ff;
+$github: #999;
+$instagram: #E1306C;
+$pinterest: #bd081c;
+
+// Used for toasts
+$error: color('red', 'accent-2');
+$success: color('green', 'accent-3');
+
+// Used in _contact.scss
+$input-background: transparentize(color('grey', 'base'), .9);
+$input-background-focus: transparentize(color('grey', 'base'), .7);

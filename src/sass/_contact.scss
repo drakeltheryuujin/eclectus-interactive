@@ -1,0 +1,58 @@
+.map {
+    height: 500px;
+}
+
+.send-message {
+    span {
+        display: inline-block;
+        min-width: 50px;
+        padding: 0 5px;
+        background: $input-background;
+        outline: none;
+
+        &:focus {
+            background: $input-background-focus;
+        }
+    }
+
+    .btn,
+    .btn-large {
+        margin-top: 2rem;
+    }
+}
+
+.contact-details {
+    a {
+        color: $black;
+        border-bottom: 1px solid $violet;
+    }
+
+    a:hover {
+        border-bottom: 1px solid $royal;
+
+        &.fa-external-link {
+            color: $pink;
+        }
+    }
+
+    .active {
+        border-bottom: $pink;
+    }
+
+    address {
+        margin-top: 15px;
+        font-style: normal;
+    }
+
+    .fa {
+        font-size: 1rem;
+    }
+
+    .im .fa {
+        width: 1.5rem;
+    }
+
+    .fa-external-link {
+        color: $ruby;
+    }
+}

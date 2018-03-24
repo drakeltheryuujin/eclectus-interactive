@@ -1,0 +1,28 @@
+include _postData
+
+if posts
+  each post, index in posts 
+    a.col.s3.padding-bottom.modal-trigger(href='##{post.slug}')
+      .square(style='background-image: url(#{imgUrl}#{post.imageId})')
+        .content.valign-wrapper.center(style="height: 100%; color: #fff; font-size: 2rem; line-height: 2rem; background-color: rgba(49, 60, 63, .5)")
+                  h5.smaller #{post.title}
+    div(id="#{post.slug}").modal.bottom-sheet
+        .modal-close.absolute.white-text &times;
+        .modal-cover
+            .rectangle-50(style='background-image: url(#{imgUrl}#{post.imageId})')
+        .modal-content
+            .row
+                .col.s12.l8.offset-l2
+                    h4 #{post.title}
+
+                    p.flow-text.grey-text.
+                        Date: #{post.published}
+
+                    .divider
+
+                    p.flow-text.
+                      #{post.excerpt}
+
+                    p.flow-text
+                      Read more on
+                      a(href='https://medium.com/@eclectusmedia/#{post.url}' target='_blank') Medium

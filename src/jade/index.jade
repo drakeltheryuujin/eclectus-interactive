@@ -1,0 +1,22 @@
+extends base
+
+block title
+    title Eclectus Interactive
+
+block vars
+    - var bodyClass = 'tunnel-skin'
+    - var formType = 'human'
+
+block spinner
+    .spinner-section-far
+
+block hero
+    section#hero.hero.full-height.valign-wrapper.scrollspy        
+      #tunnel.tunnel
+        #particles-js
+          h1.center Take flight<br>in the digital space
+
+block skin-script
+    script(src='./libs/three.js/r58/three.min.js')
+    script(src='./assets/js/skins/min/tunnel.min.js')
+    script(src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js')

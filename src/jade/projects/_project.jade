@@ -1,0 +1,32 @@
+include _projectData
+
+if projects
+  each project, index in projects
+    a.col.s3.padding-bottom.modal-trigger(href='#project-#{index}')
+      .rectangle-50(style='background-image: url(#{project.image})')
+          .content.valign-wrapper.center
+              div #{project.name}
+
+    //project modal
+    div(id='project-#{index}').modal.bottom-sheet
+        .modal-close.absolute &times;
+        .modal-cover
+            .rectangle-50(style='background-image: url(./assets/images/work/lamp.png)')
+        .modal-content
+            .row
+                .col.s12.l8.offset-l2
+                    h4 #{project.name}
+                    p.flow-text.grey-text.
+                        #{project.client}
+                    .divider
+                    p.flow-text
+                        #{project.exerpt}
+            .row
+                .col.s12.l10.offset-l1
+                  .video-container
+                      img(src='#{project.video}')
+            .row
+                .col.s12.l8.offset-l2
+                    p.flow-text.
+                      #{project.description}
+                    .divider

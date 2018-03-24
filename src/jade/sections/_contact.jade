@@ -1,0 +1,73 @@
+section#contact.contact.scrollspy
+    .container
+        h2: span Contact
+        h3 Send us a message
+        .row.send-message
+            .col.s12.l8.offset-l2
+                if (formType=='human')
+                    #human-form.card-panel.center.hoverable
+                        .row
+                            .col.s12
+                                p.flow-text
+                                    | Eclectus Interactive,
+                                    br
+                                    | My name is&nbsp;
+                                    span#name-human(contenteditable='true')
+                                    |,
+                                    | you can reach me via&nbsp;
+                                    span#contact-human(contenteditable='true', data-position='top', data-delay='10', data-tooltip='Email or phone number').tooltipped
+                                    |.
+                                p.flow-text
+                                    span#message-human(contenteditable='true') I would like to...
+                                button#send-message-human.btn.btn-large.btn-flat.waves-effect.waves-light Send
+                else if (formType=='classic')
+                    .card-panel.center.hoverable
+                        form#classic-form.row(action='mailer/mailer.php', novalidate, autocomplete='off')
+                            .col.s12.l6
+                                .input-field
+                                    input#name-classic.validate(type='text', name='name')
+                                    label(for='name-classic') Name
+                            .col.s12.l6
+                                .input-field
+                                    input#contact-classic.validate(type='email', name='email')
+                                    label(for='contact-classic') Email
+                            .col.s12
+                                .input-field
+                                    textarea#message-classic.materialize-textarea(name='message')
+                                    label(for='message-classic') Textarea
+                            button#send-message-classic.btn.btn-large.btn-flat.waves-effect.waves-light(type='submit') Send
+
+        h3.margin-top Come pay us a visit
+        #map.map
+        .row.contact-details
+            .col.s12.l4
+                h3.left-align Reach us
+                .divider
+                address
+                    | 
+                    a(href='https://maps.google.com?daddr=Prospect+Lefferts+Gardnes+Brooklyn+11225', target='_blank') Prospect Lefferts Gardens
+                    br
+                    | Brooklyn, NY 11225
+                    br
+            .col.s12.l4
+                h3.left-align Contact
+                .divider
+                p
+                    | +1-615-476-3685
+                    br
+                    a(href='mailto:hello@eclectusinteractive.com') hello@eclectusinteractive.com
+            .col.s12.l4
+                h3.left-align Message
+                .divider
+                p.im
+                    i.fa.fa-google
+                    a(href='https://hangouts.google.com/call/42jTNd6VH1m9S_cGV-0OAAEE' target="_blank") eclectusinteractive.hangout
+                    br
+                    i.fa.fa-skype
+                    a(href='skype:eclectusinteractive?chat' target="_blank") eclectusinteractive.skype
+                    br
+                    i.fa.fa-twitter
+                    a(href='https://twitter.com/@eclectusmedia' target="_blank") @eclectusmedia.twitter
+                    br
+                    i.fa.fa-slack
+                    | eclectusinteractive.slack
