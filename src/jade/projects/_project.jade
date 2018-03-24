@@ -5,13 +5,14 @@ if projects
     a.col.s3.padding-bottom.modal-trigger(href='#project-#{index}')
       .rectangle-50(style='background-image: url(#{project.image})')
           .content.valign-wrapper.center
-              div #{project.name}
+            div 
+              h5 #{project.name}
 
     //project modal
     div(id='project-#{index}').modal.bottom-sheet
         .modal-close.absolute &times;
         .modal-cover
-            .rectangle-50(style='background-image: url(./assets/images/work/lamp.png)')
+            .rectangle-50(style='background-image: url(#{project.image})')
         .modal-content
             .row
                 .col.s12.l8.offset-l2
@@ -24,7 +25,7 @@ if projects
             .row
                 .col.s12.l10.offset-l1
                   .video-container
-                      img(src='#{project.video}')
+                      // img(src='#{project.video}')
             .row
                 .col.s12.l8.offset-l2
                     p.flow-text.

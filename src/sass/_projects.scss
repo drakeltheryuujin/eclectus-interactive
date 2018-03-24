@@ -9,8 +9,8 @@
         @include transform(translate3d(0, 100%, 0));
         @include transition(all 0s linear);
         padding: 0 1rem;
-        font-size: 4rem;
-        line-height: 4rem;
+        font-size: 2rem;
+        line-height: 2rem;
         color: $white;
         opacity: 0;
 
