@@ -1,0 +1,27 @@
+if digitalMediaArt
+  each digitalMediaArtItem, index in digitalMediaArt
+    a.col.s3.padding-bottom.modal-trigger(href='#project-arts-#{index}')
+      .rectangle-50(style='background-image: url(#{digitalMediaArtItem.image})')
+          .content.valign-wrapper.center
+            div 
+              h5 #{digitalMediaArtItem.name}
+
+    //project modal
+    div(id='project-arts-#{index}').modal.bottom-sheet
+        .modal-close.absolute &times;
+        .modal-cover
+            .rectangle-50(style='background-image: url(#{digitalMediaArtItem.image})')
+        .modal-content
+            .row
+                .col.s12.l8.offset-l2
+                    h4 #{digitalMediaArtItem.name}
+                    p.flow-text.grey-text.
+                        #{digitalMediaArtItem.client}
+                    .divider
+                    p.flow-text
+                        #{digitalMediaArtItem.excerpt}
+            .row
+                .col.s12.l10.offset-l1
+                  .video-container
+                    if (digitalMediaArtItem.video)
+                      #{digitalMediaArtItem.video}

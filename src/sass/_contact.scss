@@ -31,12 +31,12 @@
         border-bottom: 1px solid $royal;
 
         &.fa-external-link {
-            color: $pink;
+            color: $ruby;
         }
     }
 
     .active {
-        border-bottom: $pink;
+        border-bottom: $ruby;
     }
 
     address {
@@ -53,6 +53,6 @@
     }
 
     .fa-external-link {
-        color: $ruby;
+        color: $pink;
     }
 }

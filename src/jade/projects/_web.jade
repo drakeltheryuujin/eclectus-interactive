@@ -1,0 +1,31 @@
+if web
+  each webItem, index in web
+    a.col.s3.padding-bottom.modal-trigger(href='#project-web-#{index}')
+      .rectangle-50(style='background-image: url(#{webItem.image})')
+          .content.valign-wrapper.center
+            div 
+              h5 #{webItem.name}
+
+    //project modal
+    div(id='project-web-#{index}').modal.bottom-sheet
+        .modal-close.absolute &times;
+        .modal-cover
+            .rectangle-50(style='background-image: url(#{webItem.image})')
+        .modal-content
+            .row
+                .col.s12.l8.offset-l2
+                    h4 #{webItem.name}
+                    p.flow-text.grey-text.
+                        #{webItem.client}
+                    .divider
+                    p.flow-text
+                        #{webItem.excerpt}
+            .row
+                .col.s12.l10.offset-l1
+                  // .video-container
+                      // img(src='#{webItem.video}')
+            .row
+                .col.s12.l8.offset-l2
+                    p.flow-text.
+                      #{webItem.technologies}
+                    .divider

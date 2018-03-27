@@ -24,9 +24,9 @@ $instagram: #E1306C;
 $pinterest: #bd081c;
 
 // Used for toasts
-$error: color('red', 'accent-2');
-$success: color('green', 'accent-3');
+$error: $ruby;
+$success: $emerald;
 
 // Used in _contact.scss
-$input-background: transparentize(color('grey', 'base'), .9);
-$input-background-focus: transparentize(color('grey', 'base'), .7);
+$input-background: $light-green;
+$input-background-focus: $orange;

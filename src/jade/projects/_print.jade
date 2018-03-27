@@ -1,0 +1,26 @@
+if print
+  each printItem, index in print
+    a.col.s3.padding-bottom.modal-trigger(href='#project-print-#{index}')
+      .rectangle-50(style='background-image: url(#{printItem.image})')
+          .content.valign-wrapper.center
+            div 
+              h5 #{printItem.name}
+
+    //project modal
+    div(id='project-print-#{index}').modal.bottom-sheet
+        .modal-close.absolute &times;
+        .modal-cover
+            .rectangle-50(style='background-image: url(#{printItem.image})')
+        .modal-content
+            .row
+                .col.s12.l8.offset-l2
+                    h4 #{printItem.name}
+                    p.flow-text.grey-text.
+                        #{printItem.client}
+                    .divider
+                    p.flow-text
+                        #{printItem.excerpt}
+            .row
+                .col.s12.l10.offset-l1
+                  // .video-container
+                      // img(src='#{printItem.video}')

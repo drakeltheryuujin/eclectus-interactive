@@ -1,64 +1,249 @@
 -
-  var projects = [
-    {
-      name: "Aux Bay",
-      client: "[Redacted]",
-      excerpt: "A independent social music platform for uploading and previewing downloadable music",
-      image: "assets/images/work/auxbay.jpg",
-      description: "A independent social music platform for uploading and previewing downloadable music",
-      video: "assets/images/work/auxbay.jpg"
-    }, {
-      name: "Beergarden",
-      client: "[Redacted]",
-      excerpt: "A marketing and informational website for a local beer garden",
-      image: "assets/images/work/beergarden.jpg",
-      description: "A marketing and informational website for a local beer garden",
-      video: "assets/images/work/beergarden.jpg"
-    }, {
-      name: "Candy Shop",
-      client: "[Redacted]",
-      excerpt: "A marketing and informational website for a local candy store",
-      image: "assets/images/work/candy.jpg",
-      description: "A marketing and informational website for a local candy store",
-      video: "assets/images/work/candy.jpg"
-    }, {
-      name: "College",
-      client: "[Redacted]",
-      excerpt: "A marketing and informational website for a nearby state college",
-      image: "assets/images/work/college.png",
-      description: "A marketing and informational website for a nearby state college",
-      video: "assets/images/work/college.png"
-    }, {
-      name: "Environmental Campaign",
-      client: "[Redacted]",
-      excerpt: "A website for an initiative for mitigating climate change",
-      image: "assets/images/work/environmental.png",
-      description: "A website for an initiative for mitigating climate change",
-      video: "assets/images/work/environmental.png"
-    }, {
-      name: "Fashion Week",
-      client: "[Redacted]",
-      excerpt: "A marketing campaign tracking live coverage at fashion week for a nail product company",
-      image: "assets/images/work/fashion.png",
-      description: "A marketing campaign tracking live coverage at fashion week for a nail product company",
-      video: "assets/images/work/fashion.png"
-    }
-  ];  
-  
   var web = [
     {
       name: "Aux Bay",
       client: "[Redacted]",
       excerpt: "A independent social music platform for uploading and previewing downloadable music",
       image: "assets/images/work/auxbay.jpg",
-      description: "A independent social music platform for uploading and previewing downloadable music",
+      technologies: "HTML, CSS, PHP",
       video: "assets/images/work/auxbay.jpg"
     }, {
-      name: "Beer Garden",
+      name: "Beergarden",
       client: "[Redacted]",
-      excerpt: "A independent social music platform for uploading and previewing downloadable music",
-      image: "assets/images/work/auxbay.jpg",
-      description: "A independent social music platform for uploading and previewing downloadable music",
-      video: "assets/images/work/auxbay.jpg"
+      excerpt: "A marketing and informational website for a local beer garden",
+      image: "assets/images/work/beergarden.jpg",
+      technologies: "Wordpress, HTML, CSS, jQuery",
+      video: "assets/images/work/beergarden.jpg"
+    },{
+      name: "College",
+      client: "[Redacted]",
+      excerpt: "A marketing and informational website for a nearby state college",
+      image: "assets/images/work/college.png",
+      technologies: "PHP, HTML, CSS, jQuery",
+      video: "assets/images/work/college.png"
+    }, {
+      name: "Environmental Campaign",
+      client: "[Redacted]",
+      excerpt: "A website for an initiative for mitigating climate change",
+      image: "assets/images/work/environmental.png",
+      technologies: "Wordpress, HTML, CSS, jQuery",
+      video: "assets/images/work/environmental.png"
+    }, {
+      name: "Fashion Week",
+      client: "[Redacted]",
+      excerpt: "A marketing campaign tracking live coverage at fashion week for a nail product company",
+      image: "assets/images/work/fashion.png",
+      technologies: "HTML, CSS, Drupal",
+      video: "assets/images/work/fashion.png"
+    }, {
+      name: "Soul of Athens",
+      client: "Ohio University",
+      excerpt: "An interactive multimedia website showcasing various journalistic showcases about Athens, Ohio",
+      image: "assets/images/work/flash.png",
+      technologies: "Flash, Drupal",
+      video: "assets/images/work/flash.png"
+    }, {
+      name: "Angel Investment Platform",
+      client: "[Redacted]",
+      excerpt: "A platform for startups to receive funding and manage investments",
+      image: "assets/images/work/startup.png",
+      technologies: "Rails, SASS, HAML, React",
+      video: "assets/images/work/startup.png"
+    }, {
+      name: "Educational Publishing",
+      client: "[Redacted]",
+      excerpt: "A marketing website for an educational materials publisher",
+      image: "assets/images/work/learn.png",
+      technologies: "HTML, CSS, PHP, jQuery, Javascript",
+      video: "assets/images/work/learn.png"
+    }, {
+      name: "Mother's Day Social Campaign'",
+      client: "[Redacted]",
+      excerpt: "A mother's day advertising campaign to encourage participation for a cause",
+      image: "assets/images/work/moment.png",
+      technologies: "HTML, CSS, PHP, jQuery, Javascript",
+      video: "assets/images/work/moment.png"
+    }, {
+      name: "Breast Cancer Awareness Social Campaign",
+      client: "[Redacted]",
+      excerpt: "A breast cancer awareness advertising campaign to encourage participation for a cause",
+      image: "assets/images/work/pink.png",
+      technologies: "HTML, CSS, PHP, jQuery, javascript",
+      video: "assets/images/work/pink.png"
+    }, {
+      name: "Kid's Game",
+      client: "[Redacted]",
+      excerpt: "An interactive matching quiz used in an advertising campaign",
+      image: "assets/images/work/quiz.png",
+      technologies: "HTML, CSS, PHP, jQuery, javascript",
+      video: "assets/images/work/quiz.png"
+    }, {
+      name: "Pvblic",
+      client: "Pvblic",
+      excerpt: "A product catalog website for a native-inspired clothing line",
+      image: "assets/images/work/pvblic.png",
+      technologies: "HTML, CSS, jQuery",
+      video: "assets/images/work/pvblic.png"
+    }, {
+      name: "Sports Ecommerce",
+      client: "[Redacted]",
+      excerpt: "A website for selling packages to a sporting event",
+      image: "assets/images/work/sport.png",
+      technologies: "Wordpress, HTML, CSS, jQuery",
+      video: "assets/images/work/sport.png"
+    }, {
+      name: "Outfit Mix 'n' Match Fb App",
+      client: "[Redacted]",
+      excerpt: "A facebook app for searching a retail brand's inventory and putting together an outfit, then locate the items in a nearby store",
+      image: "assets/images/work/style.png",
+      technologies: "Wordpress, HTML, CSS, jQuery",
+      video: "assets/images/work/style.png"
+    }, {
+      name: "Historical Timeline of Advertising",
+      client: "N/A",
+      excerpt: "A interactive timeline with photos and text",
+      image: "assets/images/work/timeline.jpg",
+      technologies: "Wordpress, HTML, CSS, jQuery",
+      video: "assets/images/work/timeline.jpg"
+    }
+  ];
+
+  var print = [
+    {
+      name: "Fitness Promotion",
+      client: "Jazzy Fitness",
+      excerpt: "Instagram promotion for a Lone Star representative",
+      image: "assets/images/work/arnold.jpg"
+    }, {
+      name: "Business Card",
+      client: "Robert Greene",
+      excerpt: "Attorney business card",
+      image: "assets/images/work/atty.png"
+    }, {
+      name: "Cy4lyf",
+      client: "N/A",
+      excerpt: "Group logo",
+      image: "assets/images/work/cy4lyf.png"
+    }, {
+      name: "Delicious Design",
+      client: "N/A",
+      excerpt: "A screenprintable poster design for an art show",
+      image: "assets/images/work/deliciousdesign.jpg"
+    }, {
+      name: "National Day of Silence",
+      client: "N/A",
+      excerpt: "A t-shirt design for a cause",
+      image: "assets/images/work/dosshirt.jpg"
+    }, {
+      name: "Flammable Album Cover",
+      client: "N/A",
+      excerpt: "Album concept art",
+      image: "assets/images/work/flammable.jpg"
+    }, {
+      name: "3 Degrees of Separation Album Cover",
+      client: "Free Form",
+      excerpt: "Album Artwork",
+      image: "assets/images/work/freeform.jpg"
+    }, {
+      name: "House Music Lives",
+      client: "DJ Barticus",
+      excerpt: "Poster Artwork",
+      image: "assets/images/work/houselives.jpg"
+    }, {
+      name: "Koi",
+      client: "N/A",
+      excerpt: "An illustration that involved 10 or 11 layers of screenprinting",
+      image: "assets/images/work/koi.jpg"
+    }, {
+      name: "Lead Me to the Water",
+      client: "The Looking",
+      excerpt: "Album artwork for a CD sleeve",
+      image: "assets/images/work/looking.jpg"
+    }, {
+      name: "Map",
+      client: "N/A",
+      excerpt: "Just an illustrated map of Daytona Beach",
+      image: "assets/images/work/map.jpg"
+    }, {
+      name: "Movement",
+      client: "N/A",
+      excerpt: "A mural that was painted on a few sheets of acrylic.",
+      image: "assets/images/work/movement.jpg"
+    }, {
+      name: "Ovation",
+      client: "Broadway Sings",
+      excerpt: "A theater poster design for an annual charity event",
+      image: "assets/images/work/ovation.jpg"
+    }, {
+      name: "Logo Concept",
+      client: "N/A",
+      excerpt: "A logo concept",
+      image: "assets/images/work/springbreak.jpg"
+    }, {
+      name: "Turtle Illustration",
+      client: "N/A",
+      excerpt: "An illustration of a turtle",
+      image: "assets/images/work/turtle.jpg"
+    }, {
+      name: "Drug Info Card",
+      client: "New York DanceSafe",
+      excerpt: "A card in a series of scientific, educational materials",
+      image: "assets/images/work/mdma.jpg"
+    }, {
+      name: "Sin 66",
+      client: "N/A",
+      excerpt: "Cider branding concept",
+      image: "assets/images/work/sin66bottle.png"
+    }, {
+      name: "Harmreduction Apparel Design",
+      client: "New York DanceSafe",
+      excerpt: "Hoodie design",
+      image: "assets/images/work/skull.jpg"
+    }
+  ];
+
+  var digitalMediaArt = [
+    {
+      name: "Band Logo Projection",
+      client: "N/A",
+      excerpt: "Live concert graphics",
+      image: "assets/images/work/HITB.png",
+      video: '<iframe src="https://player.vimeo.com/video/19167376" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+    }, {
+      name: "Rainbow Sky Animation",
+      client: "N/A",
+      excerpt: "Motion graphics for the intro of an environmental show on solar power",
+      image: "assets/images/work/rainbowsky.png",
+      video: '<iframe allowFullScreen frameborder="0" height="564" mozallowfullscreen src="https://player.vimeo.com/video/261914899" webkitAllowFullScreen width="640"></iframe>'
+    }, {
+      name: "Subway Train",
+      client: "N/A",
+      excerpt: "Subway 3D model rendering of a NYC subway train with texture",
+      image: "assets/images/work/train.jpg",
+      video: ""
+    }, {
+      name: "UFC Animation",
+      client: "N/A",
+      excerpt: "Animation of Quintin Rampage Johnson and Tito Ortiz",
+      image: "assets/images/work/ufc.png",
+      video: '<iframe allowFullScreen frameborder="0" height="564" mozallowfullscreen src="https://player.vimeo.com/video/261914688" webkitAllowFullScreen width="640"></iframe>'
+    }, {
+      name: "Soul of Athens Promo",
+      client: "N/A",
+      excerpt: "Baisc logo special effects for a promotion video for Soul of Athens",
+      image: "assets/images/work/soa.png",
+      video: '<iframe allowFullScreen frameborder="0" height="564" mozallowfullscreen src="https://player.vimeo.com/video/261914080" webkitAllowFullScreen width="640"></iframe>'
+    }, {
+      name: "Typography Animation",
+      client: "N/A",
+      excerpt: "Moving text and graphics",
+      image: "assets/images/work/intro.png",
+      video: '<iframe allowFullScreen frameborder="0" height="564" mozallowfullscreen src="https://player.vimeo.com/video/261915698" webkitAllowFullScreen width="640"></iframe>'
+    }, {
+      name: "Ridges Architecture",
+      client: "N/A",
+      excerpt: 'A 3D model and rendering of the main building at \"The Ridges\"',
+      image: "assets/images/work/ridges.jpg",
+      video: ''
     }
   ];
