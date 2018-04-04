@@ -1,6 +1,6 @@
 <?php
 
-$my_email = 'hello@eclectusinteractive.com';
+$my_email = 'info@eclectusinteractive.com';
 
 $SMTP = array(
     'enabled' => true,

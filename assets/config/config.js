@@ -24,7 +24,7 @@ CONFIG = {
         lng: -73.9634352,
         zoom: 15,
         marker: true,
-        markerTitle: 'Eclectus Media',
+        markerTitle: 'Eclectus Interactive',
         stylesConfigFile: 'maps-apple-style.json'
     }
 
